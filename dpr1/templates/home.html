@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+<<<<<<< HEAD
+<title>Home</title>
+=======
+Home
+>>>>>>> 4836fdd (Added alert message)
+{% endblock %}
+{% block content %}
+<div class="my-5 mx-auto " style="width: 1000px;" >
+    <h2 class="my-5 mx-auto">Users</h2>
+<<<<<<< HEAD
+    <p class="text-success">{{message}}</p>
+=======
+>>>>>>> 4836fdd (Added alert message)
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Handle Name</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{user.first_name}}</td>
+        <td>{{user.last_name}}</td>
+        <td>{{user.email}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
