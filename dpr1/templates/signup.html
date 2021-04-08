@@ -1,16 +1,11 @@
 {% extends 'base.html' %}
-<<<<<<< HEAD
-{% block content %}
-<div class="my-5 mx-auto " style="width: 500px;" >
-    <h2 class="my-5 mx-auto">Sign up</h2>
-    <p class="text-danger">{{error}}</p>
-=======
 {% block title %}
 Sign Up
 {% endblock %}
 {% block content %}
 <div class="my-5 mx-auto " style="width: 500px;" >
     <h2 class="my-5 mx-auto">Sign up</h2>
+    <p class="text-danger">{{error}}</p>
 
  <form method="POST">
      {% csrf_token %}
@@ -18,6 +13,6 @@ Sign Up
          {{user_form.as_table}}
      </table>
      <br>
-     <button type="submit" class="my=5 btn btn-outline-dark">Login</button>
+     <button type="submit" class="my=5 btn btn-outline-dark">Signup</button>
      </form>
 {% endblock content %}
